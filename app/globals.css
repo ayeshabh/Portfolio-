@@ -11,3 +11,50 @@ html.dark {
 .borderBlack{
     @apply border  border-black/10;
 }
+
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: opacity 0.5s ease;
+    opacity: 0;
+}
+
+.overlay.ReactModalOverlay--after-open {
+    opacity: 1;
+}
+
+.overlay.ReactModalOverlay--before-close {
+    opacity: 0;
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    outline: none;
+    opacity: 0;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    transform: translate(-50%, -45%);
+}
+
+.modal.ReactModalContent--after-open {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+}
+
+.modal.ReactModalContent--before-close {
+    opacity: 0;
+    transform: translate(-50%, -45%);
+}

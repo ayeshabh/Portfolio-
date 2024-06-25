@@ -62,6 +62,9 @@ export const projectsData = [
       "Developed a dashboard providing a comprehensive overview of essential metrics, including sales performance, revenue, and market trends, with data available for days and months.",
     tags: ["POWERBI", "SQL SERVER", "EXCEL"],
     imageUrl: dilka,
+    points:["point 1","point 2"],
+    liveLink:"https://nexmart.up.railway.app/",
+    gitHub:"https://github.com/xCyanidex/NexMart"
   },
   {
     title: "COVID-19 Vaccinations",
@@ -69,6 +72,9 @@ export const projectsData = [
       "Analyzed COVID-19 vaccination data, detailing global vaccination numbers and comparing rates across countries. Investigated how GDP influences vaccination efforts.",
     tags: ["EXCEL", "TABLEAU"],
     imageUrl: dynamic,
+    points:["point 1","point 2"],
+    liveLink:"https://nexmart.up.railway.app/",
+    gitHub:"https://github.com/xCyanidex/NexMart"
   },
   {
     title: "SF Salary Insights",
@@ -76,6 +82,9 @@ export const projectsData = [
       "Investigated San Francisco salaries by cleaning and analyzing the data primarily using Python. Analysis provides insights into key salary trends and answered several pertinent questions regarding income distribution in the Bay Area.",
     tags: ["PYTHON", "HTML", "EXCEL"],
     imageUrl: tarshes,
+    points:["point 1","point 2"],
+    liveLink:"https://nexmart.up.railway.app/",
+    gitHub:"https://github.com/xCyanidex/NexMart"
   },
 ] as const;
 
