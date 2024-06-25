@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useState} from "react";
+import { SetStateAction, useRef, useState} from "react";
 import { projectsData } from "@/lib/data";
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
@@ -37,7 +37,7 @@ export default function Project({
 
     const [size, setSize] =useState(null);
 
-    const handleOpen = (value) => setSize(value);
+    const handleOpen = (value: string | SetStateAction<null>) => setSize(value);
 
 
   return (
